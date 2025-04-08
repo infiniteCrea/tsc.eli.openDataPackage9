@@ -1,0 +1,92 @@
+{
+  "resources": [
+    {
+      "name": "ods161",
+      "type": "table",
+      "title": "Imbalance prices per minute (Near real-time)",
+      "description": "The 1 min imbalance prices are published as fast as possible and give an indication for the final imbalance price of the ISP (imbalance settlement period which is 15min). This report contains data for the current hour and is refreshed every minute. Notice that in this report we only provide non-validated data. This dataset contains data from 22/05/2024 (MARI local go-live) on.",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0"
+        }
+      ],
+      "sources": [
+        {
+          "title": "source0",
+          "path": "https://opendata.elia.be/explore/dataset/ods161/information/?sort=datetime"
+        }
+      ],
+      "path": "ods161.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "dialect": {
+        "headerRows": [
+          1
+        ],
+        "csv": {
+          "delimiter": ";"
+        }
+      },
+      "schema": {
+        "name": "ods161",
+        "title": "Imbalance prices per minute (Near real-time)",
+        "fields": [
+          {
+            "name": "Datetime",
+            "type": "datetime"
+          },
+          {
+            "name": "Resolution code",
+            "type": "duration"
+          },
+          {
+            "name": "Quarter hour",
+            "type": "datetime"
+          },
+          {
+            "name": "Quality status",
+            "type": "string"
+          },
+          {
+            "name": "ACE",
+            "type": "number"
+          },
+          {
+            "name": "System imbalance",
+            "type": "number"
+          },
+          {
+            "name": "Alpha",
+            "type": "number"
+          },
+          {
+            "name": "Alpha'",
+            "type": "number"
+          },
+          {
+            "name": "Marginal incremental price",
+            "type": "number"
+          },
+          {
+            "name": "Marginal decremental price",
+            "type": "number"
+          },
+          {
+            "name": "Imbalance Price",
+            "type": "number"
+          }
+        ]
+      },
+      "contributors": [
+        {
+          "title": "Elia Transmission Belgium",
+          "role": "Publisher"
+        }
+      ]
+    }
+  ]
+}
